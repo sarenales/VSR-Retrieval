@@ -12,7 +12,7 @@ En el conjunto de datos original de VSR, cada instancia cuenta con diversos atri
 Nuestro dataset se guardará en la variable **filtro**.
 
 ## MODELO - OFA
-Preparación del modelo. Se utilizará OFA-base.
+Preparación del modelo. Se utilizará OFA-base principalmente.
 
 # Objetivo
 Vamos a evaluar nuestro conjunto de datos en el framework de aprendizaje automático OFA (One-for-All) en nuestro dataset especializado en analizar capacidad espacial en modelos multimodales.
