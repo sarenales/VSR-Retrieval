@@ -1,8 +1,12 @@
 # Evaluación del conocimiento espacial de los modelos multimodales
-Nuestro estudio se basa en el modelo multimodal OFA (One-for-All), un modelo entrenado para diversas tareas de visión y texto, tanto de manera independiente como combinada. OFA ha 
-demostrado ser competente en tareas específicas para las que ha sido entrenado. No obstante, queremos investigar su desempeño en una tarea nueva, pero conceptualmente similar a otras 
-que ya ha manejado: la identificación y descripción de relaciones espaciales.
-Por tanto, este estudio se estructura en varias etapas clave. En primer lugar, se ha diseñado un conjunto de datos específicamente para evaluar la comprensión de relaciones espaciales para el modelo seleccionado. A continuación, se somete a OFA a este conjunto de datos, aplicando diversos métodos y criterios de evaluación para medir su desempeño. Finalmente, se analizan y discuten los resultados obtenidos, subrayando las limitaciones actuales de los modelos multitarea, sobretodo en tareas de relaciones espaciales.
+Esta investigación tiene como objetivo principal explorar si los modelos multitarea, [OFA](https://github.com/OFA-Sys/OFA), pueden adquirir conocimientos sobre las relaciones
+espaciales a través de las tareas de visión y texto en las que han sido preentrenadas.
+
+El reconocimiento y la interpretación de relaciones espaciales es una tarea crucial de la inteligencia humana que nos permite comprender el mundo que nos rodea. Es por eso, que creemos que es un aspecto que se debe de estudiar para poder decir que estos modelos son capaces de razonar inteligentemente.
+
+Es por eso que hemos escogido [OFA](https://github.com/OFA-Sys/OFA) . Se trata de un modelo entrenado para diversas tareas de visión y texto, tanto de manera independiente como combinada. Este modelo ha demostrado ser competente en tareas específicas para las que ha sido entrenado. No obstante, queremos investigar su desempeño en una tarea nueva, pero conceptualmente similar a otras que ya ha manejado: la identificación y descripción de relaciones espaciales.
+
+Por tanto, este estudio se estructura en varias etapas clave. En primer lugar, se ha diseñado un conjunto de datos específicamente para evaluar la comprensión de relaciones espaciales para el modelo seleccionado llamado **VSR-Retrieval**, que se ha formado a partir del dataset [VSR](https://github.com/cambridgeltl/visual-spatial-reasoning). A continuación, se somete a OFA a este conjunto de datos, aplicando diversos métodos y criterios de evaluación para medir su desempeño. Finalmente, se analizan y discuten los resultados obtenidos, subrayando las limitaciones actuales de los modelos multitarea, sobretodo en tareas de relaciones espaciales.
 
 ![Presentacion](./Imagenes/ITM.png)
 
@@ -45,22 +49,17 @@ Exactamente igual que el caso anterior, pero ahora normalizamos las probabilidad
 
 ## 2. Image Captioning
 
-En esta segunda evaluación, E nos vamos a centrar en la probabilidad de determinar una secuencia ya pregenerada,
+En esta segunda evaluación, nos vamos a centrar en la probabilidad de determinar una secuencia ya pregenerada,
 es decir nuestra caption correcta.
 
-Por tanto el objetivo aquí es determinar qué caption (correcta o incorrecta) tiene mayor probabilidad de ser seleccionada por el modelo, basándose en las métricas obtenidas: probabilidad media de la
-frase pregenerada y suma de logits.
+Por tanto el objetivo aquí es determinar qué caption (correcta o incorrecta) tiene mayor probabilidad de ser seleccionada por el modelo, basándose en las métricas obtenidas: probabilidad media de la frase pregenerada y suma de logits.
 
 ### 2.1. Comparación de probabilidades medias
 
-### 2.2. Comparación de multiplicación probabilidades
-
-### 2.3. - 2.4. Análisis de la suma de logits
+### 2.2. Análisis de la suma de logits
 
 
-Por tanto, si todas las métricas (probabilidad media, multiplicación de probabilidades y suma de logits)
-
-favorecen a la caption correcta, se puede concluir con alta confianza que el modelo tiene mayor probabilidad de seleccionar la caption correcta.
+Por tanto, si todas las métricas (probabilidad media y suma de logits) favorecen a la caption correcta, se puede concluir con alta confianza que el modelo tiene mayor probabilidad de seleccionar la caption correcta.
 
 Por otro lado, si ambas métricas favorecen a la caption incorrecta, se puede concluir con alta confianza que el modelo tiene mayor probabilidad de seleccionar la caption incorrecta.
 
