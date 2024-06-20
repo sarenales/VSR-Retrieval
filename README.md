@@ -8,7 +8,7 @@ Es por eso que hemos escogido [OFA](https://github.com/OFA-Sys/OFA) . Se trata d
 
 Por tanto, este estudio se estructura en varias etapas clave. En primer lugar, se ha diseñado un conjunto de datos específicamente para evaluar la comprensión de relaciones espaciales para el modelo seleccionado llamado **VSR-Retrieval**, que se ha formado a partir del dataset [VSR](https://github.com/cambridgeltl/visual-spatial-reasoning). A continuación, se somete a OFA a este conjunto de datos, aplicando diversos métodos y criterios de evaluación para medir su desempeño. Finalmente, se analizan y discuten los resultados obtenidos, subrayando las limitaciones actuales de los modelos multitarea, sobretodo en tareas de relaciones espaciales.
 
-![Presentacion](./Imagenes/ITM.png)
+![Presentacion](./Imagenes/ITM1.png)
 
 ## DATASET 
 Comenzaremos obteniendo nuestras instancias del conjunto de datos VSR (Visual Scene Representation). A continuación, realizaremos un filtrado y adaptaremos los datos según nuestras necesidades para el proyecto en cuestión.
