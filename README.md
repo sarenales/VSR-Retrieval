@@ -1,3 +1,7 @@
+[Presentacion](https://www.canva.com/design/DAGI2JGSBak/mcHLSBRzhYnsG0INVynHPQ/edit?utm_content=DAGI2JGSBak&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Memoria](https://github.com/sarenales/VSR-Retrieval/blob/main/documentaci%C3%B3n/TFG___Silvia_Arenales.pdf)
+[Poster](https://github.com/sarenales/VSR-Retrieval/blob/main/documentaci%C3%B3n/poster.pdf)
+
 # Evaluación del conocimiento espacial de los modelos multimodales
 Esta investigación tiene como objetivo principal explorar si los modelos multitarea, [OFA](https://github.com/OFA-Sys/OFA), pueden adquirir conocimientos sobre las relaciones
 espaciales a través de las tareas de visión y texto en las que han sido preentrenadas.
